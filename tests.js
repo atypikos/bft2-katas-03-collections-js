@@ -48,6 +48,7 @@ describe("Colecciones en JS: Array", () => {
 
         let fruits = ["Piña", "Manzana", "Fresa", "Melón"]
 
+        fruits[1] = "Pera";
         // Añade el código que permite modificar el elemento correspondiente
 
         expect(fruits).to.have.same.members(["Piña", "Pera", "Fresa", "Melón"])
@@ -56,6 +57,7 @@ describe("Colecciones en JS: Array", () => {
     it("Podemos añadir elementos", () => {
         let fruits = ["Piña", "Manzana", "Fresa", "Melón"]
 
+        fruits.push("Pera");
         // Añade el código que permite modificar la lista (incluyendo un elemento al final)
 
         expect(fruits).to.have.same.members(["Piña", "Manzana", "Fresa", "Melón", "Pera"])
