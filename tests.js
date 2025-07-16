@@ -6,11 +6,15 @@ describe("Colecciones en JS: Array", () => {
 
         // crea un array "a" usando los corchetes []
 
+        let a = ["a", "b", "c", "d"];
+
         expect(Array.isArray(a)).to.be.true;
     })
     it("Pueden crearse usando new Array", () => {
 
         // crea un array "a" usando el constructor "new"
+
+        let a = new Array("e", "f", "g", "h");
 
         expect(Array.isArray(a)).to.be.true;
     })
